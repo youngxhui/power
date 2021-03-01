@@ -1,4 +1,4 @@
-module Demo
+module power
 
 go 1.15
 
