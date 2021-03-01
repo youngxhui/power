@@ -1,4 +1,4 @@
-module power
+module github.com/youngxhui/power
 
 go 1.15
 
