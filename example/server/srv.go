@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Demo/example/proto"
 	"context"
+	"github.com/youngxhui/power/example/proto"
 )
 
 type GreeterService struct {

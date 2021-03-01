@@ -1,9 +1,9 @@
 package main
 
 import (
-	"Demo/core"
-	"Demo/example/proto"
-	"Demo/register"
+	"github.com/youngxhui/power/core"
+	"github.com/youngxhui/power/example/proto"
+	"github.com/youngxhui/power/register"
 )
 
 func main() {

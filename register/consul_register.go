@@ -1,9 +1,9 @@
 package register
 
 import (
-	"Demo/log"
 	"github.com/hashicorp/consul/api"
 	"github.com/hashicorp/go-uuid"
+	"github.com/youngxhui/power/log"
 )
 
 type Consul struct {

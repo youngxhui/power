@@ -1,6 +1,6 @@
 package core
 
-import "Demo/register"
+import "github.com/youngxhui/power/register"
 
 type Config struct {
 	// 服务注册中心

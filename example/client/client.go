@@ -1,10 +1,10 @@
 package main
 
 import (
-	"Demo/balancer"
-	"Demo/example/proto"
-	"Demo/log"
 	"context"
+	"github.com/youngxhui/power/balancer"
+	"github.com/youngxhui/power/example/proto"
+	"github.com/youngxhui/power/log"
 	"google.golang.org/grpc/metadata"
 )
 

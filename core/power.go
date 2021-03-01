@@ -1,8 +1,8 @@
 package core
 
 import (
-	"Demo/log"
-	"Demo/register"
+	"github.com/youngxhui/power/log"
+	"github.com/youngxhui/power/register"
 	"google.golang.org/grpc"
 	"net"
 	"strconv"
