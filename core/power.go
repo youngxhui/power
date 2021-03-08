@@ -20,12 +20,14 @@ var r register.Register
 
 // NewServer 创建新的服务
 func (power Power) NewServer(config Config) *grpc.Server {
+	if config.IsNeedRegister  {
+		r = config.Register
 
-	r = config.Register
-
-	r.RegisterServer(power.ServerName,power.Port,"127.0.0.1")
+		r.RegisterServer(power.ServerName, power.Port, "127.0.0.1")
+	}
 
 	g = grpc.NewServer()
+
 	return g
 }
 
@@ -37,8 +39,8 @@ func (power *Power) Run() {
 		log.Error("服务启动失败")
 	}
 	log.Info("服务启动", "监听地址 127.0.0.1:"+strconv.Itoa(power.Port))
-	if err = g.Serve(l);err!= nil {
-		log.Error("发生了错误",err.Error())
+	if err = g.Serve(l); err != nil {
+		log.Error("发生了错误", err.Error())
 		panic(err)
 	}
 

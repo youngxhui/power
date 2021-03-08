@@ -18,8 +18,9 @@ func main() {
 			Port:    0,
 			Address: "127.0.0.1",
 		},
+		IsNeedRegister: false,
 	}
-	// config := core.DefaultConfig()
+	//config := core.DefaultConfig()
 
 	s := power.NewServer(c)
 	// 注册proto
