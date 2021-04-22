@@ -16,8 +16,8 @@ func (c Consul) RegisterServer(ServiceName string, Port int, Address string) {
 
 	client, _ := api.NewClient(api.DefaultConfig())
 	register := new(api.AgentServiceRegistration)
-	uuid, _ := uuid.GenerateUUID()
-	register.ID = uuid
+	id, _ := uuid.GenerateUUID()
+	register.ID = id
 	register.Port = Port
 	register.Name = ServiceName
 	register.Address = Address

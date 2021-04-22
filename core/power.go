@@ -25,8 +25,11 @@ func (power Power) NewServer(config Config) *grpc.Server {
 
 		r.RegisterServer(power.ServerName, power.Port, "127.0.0.1")
 	}
-
-	g = grpc.NewServer()
+	opt := []grpc.ServerOption {
+		InterceptorChain(),
+		//grpc.UnaryInterceptor(grpc_middleware.ChainUnaryServer()),
+	}
+	g = grpc.NewServer(opt...)
 
 	return g
 }

@@ -7,6 +7,7 @@ require (
 	github.com/golang/mock v1.2.0 // indirect
 	github.com/golang/protobuf v1.4.3
 	github.com/google/go-cmp v0.5.2 // indirect
+	github.com/grpc-ecosystem/go-grpc-middleware v1.2.2
 	github.com/hashicorp/consul/api v1.8.1
 	github.com/hashicorp/go-hclog v0.14.1 // indirect
 	github.com/hashicorp/go-immutable-radix v1.3.0 // indirect
