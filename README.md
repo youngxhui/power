@@ -1,10 +1,12 @@
-package main
+# POWER **WIP**
 
-import (
-	"github.com/youngxhui/power/core"
-	"github.com/youngxhui/power/example/proto"
-)
+开箱即用的 gRPC 框架。
 
+## 服务端
+
+构建简单的服务端
+
+```go
 func main() {
 
 	power := core.Power{
@@ -20,3 +22,11 @@ func main() {
 	// 启动服务
 	power.Run()
 }
+```
+
+## 客户端
+
+```go
+
+```
+
