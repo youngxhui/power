@@ -20,14 +20,13 @@ var r register.Register
 
 // NewServer 创建新的服务
 func (power Power) NewServer(config Config) *grpc.Server {
-	if config.IsNeedRegister  {
+	if config.IsNeedRegister {
 		r = config.Register
 
 		r.RegisterServer(power.ServerName, power.Port, "127.0.0.1")
 	}
-	opt := []grpc.ServerOption {
+	opt := []grpc.ServerOption{
 		InterceptorChain(),
-		//grpc.UnaryInterceptor(grpc_middleware.ChainUnaryServer()),
 	}
 	g = grpc.NewServer(opt...)
 
@@ -47,6 +46,4 @@ func (power *Power) Run() {
 		panic(err)
 	}
 
-	defer r.UnRegisterServer(power.ServerName)
-	//power.Register.UnRegisterServer(power.ServerName)
 }
