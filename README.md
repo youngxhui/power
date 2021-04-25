@@ -1,4 +1,6 @@
-# POWER **WIP**
+# POWER  [![Go](https://github.com/youngxhui/power/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/youngxhui/power/actions/workflows/go.yml)
+
+**⚠️WIP⚠️**
 
 开箱即用的 gRPC 框架。
 
