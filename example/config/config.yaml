@@ -1,0 +1,5 @@
+security:
+  method:
+    - "/com.example.Greeter/SayHello"
+
+

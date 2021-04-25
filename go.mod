@@ -4,6 +4,7 @@ go 1.15
 
 require (
 	github.com/armon/go-metrics v0.3.6 // indirect
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/golang/mock v1.2.0 // indirect
 	github.com/golang/protobuf v1.4.3
 	github.com/google/go-cmp v0.5.2 // indirect

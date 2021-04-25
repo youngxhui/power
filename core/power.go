@@ -26,7 +26,7 @@ func (power Power) NewServer(config Config) *grpc.Server {
 		r.RegisterServer(power.ServerName, power.Port, "127.0.0.1")
 	}
 	opt := []grpc.ServerOption{
-		InterceptorChain(),
+		InterceptorChain(config),
 	}
 	g = grpc.NewServer(opt...)
 

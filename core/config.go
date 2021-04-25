@@ -13,6 +13,13 @@ type Config struct {
 	// 负载均衡
 
 	// 链路跟踪
+
+	// Jwt
+	Jwt jwt
+}
+
+type jwt struct {
+	Secret string
 }
 
 // DefaultConfig 默认配置
@@ -23,5 +30,6 @@ func DefaultConfig() Config {
 			Port:    0,
 			Address: "127.0.0.1:1234",
 		},
+		Jwt: jwt{Secret: "power"},
 	}
 }
