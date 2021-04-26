@@ -1,4 +1,4 @@
-# POWER  [![Go](https://github.com/youngxhui/power/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/youngxhui/power/actions/workflows/go.yml)
+# POWER  [![Go](https://github.com/youngxhui/power/actions/workflows/go.yml/badge.svg?branch=master)](https://github.com/youngxhui/power/actions/workflows/go.yml)[![CodeQL](https://github.com/youngxhui/power/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/youngxhui/power/actions/workflows/codeql-analysis.yml)
 
 **⚠️WIP⚠️**
 
