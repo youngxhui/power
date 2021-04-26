@@ -9,6 +9,8 @@
 构建简单的服务端
 
 ```go
+package main
+
 func main() {
 
 	power := core.Power{
